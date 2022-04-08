@@ -18,7 +18,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <section className="App">
       {loading ? (
         <div className="loader--page">
           <PacmanLoader color={"#6CF5DA"} loading={loading} size={80} />
@@ -34,7 +34,7 @@ function App() {
           <Footer />
         </BrowserRouter>
       )}
-    </div>
+    </section>
   );
 }
 

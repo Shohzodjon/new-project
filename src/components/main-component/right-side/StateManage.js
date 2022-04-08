@@ -33,7 +33,7 @@ const StateManage = () => {
                   <p>{item.title}</p>
                 </td>
                 <td>
-                  <p>{item.price}</p>
+                  <p>{item.price} $</p>
                 </td>
                 <td>
                   <h2>Quantity ({item.quantity})</h2>
@@ -68,7 +68,7 @@ const StateManage = () => {
         </tbody>
       </table>
       <div className="total--price">
-        <h3>Total Price : {cartTotal}</h3>
+        <h3>Total Price : {cartTotal} $</h3>
       </div>
       <div className="btn--group">
         <button className="clear--item" onClick={() => emptyCart()}>

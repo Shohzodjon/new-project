@@ -1,0 +1,60 @@
+.left--side {
+  background: #fbfbfb;
+  border-radius: 20px;
+  padding: 2rem 0;
+  width: 30%;
+}
+.left--side--logo {
+  display: flex;
+  margin: 2rem 1rem;
+  align-items: center;
+  gap: 1.5rem;
+}
+.left--side--logo > img {
+  width: 50px;
+}
+.left--side--logo h1 {
+  font-weight: 700;
+  font-size: 3.3rem;
+  line-height: 5rem;
+  letter-spacing: 0.05em;
+  color: #00302e;
+}
+.left--side--logo a {
+  color: #00302e;
+}
+.left--side--nav {
+  margin: 2rem 1rem;
+}
+.left--side--nav li {
+  background: #efefef;
+  border-radius: 12px;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+.left--side--nav > li > div {
+  display: flex;
+  align-items: center;
+}
+.left--side--nav .lft--side--icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: #707070;
+}
+.left--side--nav span {
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-size: 2rem;
+  color: #707070;
+}
+.left--side--nav .product--count {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #999;
+  text-align: center;
+  padding-bottom: 0.4rem;
+}

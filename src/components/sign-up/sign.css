@@ -1,0 +1,82 @@
+.sign--section--flex {
+  display: flex;
+
+  align-items: center;
+}
+.sign--section--img {
+  position: relative;
+  width: 45%;
+}
+.sign--section--img img {
+  width: 100%;
+  border-radius: 1rem 0 0 1rem;
+}
+.sign--section--info {
+  width: 50%;
+  padding: 0 4rem;
+}
+.sign--section--info h1 {
+  font-weight: 600;
+  font-size: 2.7rem;
+  line-height: 3.3rem;
+  color: #00302e;
+  text-align: center;
+  margin: 2rem 0;
+}
+.sign--section--info .user--name,
+.sign--section--info .user--email {
+  width: 100%;
+  margin: 1.5rem 0;
+  background: rgba(255, 255, 255, 0.83);
+  border: 1px solid rgba(251, 221, 187, 0.51);
+  border-radius: 5px;
+  padding: 1.5rem;
+  font-size: 1.4rem;
+  outline: none;
+  line-height: 3rem;
+}
+.sign--section--info .user--password {
+  background: rgba(255, 255, 255, 0.83);
+  border-radius: 5px;
+  padding: 1.5rem;
+  width: 80%;
+  border: none;
+  font-size: 1.4rem;
+  outline: none;
+  line-height: 3rem;
+}
+
+.sign--section--info label {
+  border: 1px solid rgba(251, 221, 187, 0.51);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  padding-right: 1rem;
+  margin: 1.5rem 0;
+}
+.sign--section--info .eye--icon {
+  font-size: 1.8rem;
+}
+.sign--section--info button {
+  width: 100%;
+  margin: 2rem 0;
+  background: #00302e;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  border: none;
+  color: #fbddbb;
+  padding: 1.5rem;
+}
+.sign--section--info p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(0, 48, 46, 0.91);
+}
+.sign--section--info .error {
+  color: crimson;
+}

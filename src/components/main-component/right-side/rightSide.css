@@ -1,0 +1,23 @@
+.right--section {
+  width: 70%;
+  padding: 2rem 3rem;
+  position: relative;
+}
+.right--side--nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.right--side--nav h2 {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  color: #00302e;
+  margin-bottom: 0.5rem;
+}
+.right--side--nav p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 3.3rem;
+  color: rgba(0, 0, 0, 0.69);
+}

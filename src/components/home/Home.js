@@ -13,9 +13,9 @@ const Home = () => {
   return (
     <section className="home--section">
       <header className="home--section__header">
+        <Navbar />
         <div className="container">
-          <Navbar />
-          <div className="home--section--flex">
+          {/* <div className="home--section--flex">
             <div className="home--flex--info">
               <h1>Order food anytime, anywhere</h1>
               <p>
@@ -34,9 +34,9 @@ const Home = () => {
                 <img src={HomeImg} alt="home img" />
               </div>
             </div>
-          </div>
+          </div> */}
 
-          <section className="home--section--meal">
+          {/* <section className="home--section--meal">
             <h2 className="meal--title">Special Meals of the day!</h2>
             <p className="meal--pragh">
               Check our sepecials of the day and get discounts on all our meals{" "}
@@ -73,9 +73,9 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
 
-          <section className="home--section--update">
+          {/* <section className="home--section--update">
             <div className="home--upate--flex">
               <div className="update--flex--left">
                 <h2>Get notified when we update!</h2>
@@ -90,7 +90,7 @@ const Home = () => {
                 <button type="submit">Get notified</button>
               </div>
             </div>
-          </section>
+          </section> */}
         </div>
       </header>
     </section>

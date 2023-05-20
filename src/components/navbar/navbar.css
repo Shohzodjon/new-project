@@ -1,9 +1,14 @@
 nav {
+  width: 100vw;
+  overflow-x: hidden;
+  margin-bottom: 5rem;
+  height: max-content;
+}
+.navbar__flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
-  margin-bottom: 5rem;
+  padding: 2rem 0;
 }
 .logo {
   display: flex;
@@ -16,7 +21,7 @@ nav {
 }
 .logo .nav--heading {
   font-size: 3.5rem;
-  font-weight: 700;
+  font-weight: 600;
   color: #fff;
 }
 .home,
@@ -34,6 +39,10 @@ nav {
   display: flex;
   column-gap: 3rem;
   align-items: center;
+}
+.menu__icon {
+  display: none;
+  cursor: pointer;
 }
 .form--aplication a {
   font-weight: 500;
@@ -59,4 +68,105 @@ nav {
 .home:hover > a,
 .login:hover > a {
   color: #00302e;
+}
+
+.respons__nav {
+  position: absolute;
+  left: 0;
+  top: 58px;
+  width: 100%;
+  background: #ffff;
+  padding: 4px 25px;
+  transition: all 0.3s linear;
+  opacity: 0;
+  transform: scale(0);
+  display: none;
+}
+.active__nav {
+  opacity: 1;
+  transform: scale(1);
+}
+.respons__nav a {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #222;
+  line-height: 26px;
+  display: block;
+  width: 100%;
+  padding: 5px 9px;
+  border-radius: 3px;
+}
+.respons__nav li {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.active__link {
+  background: #e2b887;
+}
+
+@media screen and (min-width: 300px) and (max-width: 576px) {
+  .navbar__flex {
+    padding: 1.2rem 0;
+  }
+  .respons__nav {
+    display: block;
+  }
+  .logo > img {
+    width: 25px;
+    height: 33px;
+  }
+  .logo .nav--heading {
+    font-size: 2.5rem;
+  }
+  .form--aplication {
+    display: none;
+  }
+  .menu__icon {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .navbar__flex {
+    padding: 1.5rem 0;
+  }
+  .logo > img {
+    width: 30px;
+    height: 35px;
+  }
+  .logo .nav--heading {
+    font-size: 2.5rem;
+  }
+  .form--aplication {
+    column-gap: 1.5rem;
+  }
+  .home,
+  .login,
+  .sign-up {
+    width: 100px;
+    padding: 0.4rem;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .navbar__flex {
+    padding: 1.8rem 0;
+  }
+  .logo > img {
+    width: 45px;
+    height: 50px;
+  }
+  .logo .nav--heading {
+    font-size: 2.8rem;
+  }
+  .form--aplication {
+    column-gap: 1.5rem;
+  }
+  .home,
+  .login,
+  .sign-up {
+    width: 130px;
+    padding: 0.6rem;
+  }
 }

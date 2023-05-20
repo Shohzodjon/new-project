@@ -2,6 +2,7 @@ import React from "react";
 import StoreApp from "../../assets/imges/appstore.png";
 import GooglePlay from "../../assets/imges/googleplay.png";
 import { BsInstagram, BsTwitter, BsYoutube } from "react-icons/bs";
+import { Link } from "react-router-dom";
 import "./footer.css";
 
 const Footer = () => {
@@ -11,66 +12,69 @@ const Footer = () => {
         <div className="footer--flex">
           <ul>
             <li>
-              <a href="#">
+              <Link to="/">
                 <strong>Company</strong>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">About Us</a>
+              <Link to="/">About Us</Link>
             </li>
             <li>
-              <a href="#">Careers</a>
+              <Link to="/">Careers</Link>
             </li>
             <li>
-              <a href="#">Contact Us</a>
+              <Link to="/">Contact Us</Link>
             </li>
           </ul>
 
           <ul>
             <li>
-              <a href="#">
+              <Link to="/">
                 <strong>Support</strong>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">Help Center</a>
+              <Link to="/">Help Center</Link>
             </li>
             <li>
-              <a href="#">Safety Center</a>
+              <Link to="/">Safety Center</Link>
             </li>
           </ul>
           <ul>
             <li>
-              <a href="#">
+              <Link to="/">
                 <strong>Legal</strong>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">Cookies Policy</a>
+              <Link to="/">Cookies Policy</Link>
             </li>
             <li>
-              <a href="#">Privacy Policy</a>
+              <Link to="/">Privacy Policy</Link>
             </li>
             <li>
-              <a href="#">Terms of Services</a>
+              <Link to="/">Terms of Services</Link>
             </li>
             <li>
-              <a href="#">Dispute resolution</a>
+              <Link to="/">Dispute resolution</Link>
             </li>
           </ul>
           <ul>
             <li>
-              <a href="#">
+              <Link to="/">
                 <strong>Install App</strong>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <a href="https://www.apple.com/ru/app-store" target="_blank">
                 <img src={StoreApp} alt="tore--app" />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a
+                href="https://play.google.com/store/apps?hl=ru"
+                target="_blank"
+              >
                 <img src={GooglePlay} alt="google--play" />
               </a>
             </li>
@@ -83,17 +87,17 @@ const Footer = () => {
             <h4>&copy; 2021 LILIES, All rights reserved</h4>
             <ul>
               <li>
-                <a href="#">
+                <a href="https://www.instagram.com/" target="_blank">
                   <BsInstagram />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://twitter.com/?lang=en" target="_blank">
                   <BsTwitter />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://www.youtube.com" target="_blank">
                   <BsYoutube />
                 </a>
               </li>

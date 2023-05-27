@@ -1,6 +1,5 @@
 .sign--section--flex {
   display: flex;
-
   align-items: center;
 }
 .sign--section--img {
@@ -79,4 +78,84 @@
 }
 .sign--section--info .error {
   color: crimson;
+}
+
+@media screen and (min-width: 300px) and (max-width: 576px) {
+  .sign--section--flex {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .sign--section--img {
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  .sign--section--info {
+    width: 100%;
+    padding: 0;
+    margin-top: 2rem;
+  }
+  .sign--section--info h1 {
+    margin: 1rem 0;
+  }
+  .sign--section--info .user--name,
+  .sign--section--info .user--email {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+  .sign--section--info .user--password {
+    padding: 1rem;
+    width: 80%;
+  }
+  .sign--section--info button {
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .sign--section--flex {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .sign--section--img {
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  .sign--section--info {
+    width: 100%;
+    padding: 0;
+    margin-top: 2rem;
+  }
+  .sign--section--info h1 {
+    margin: 1rem 0;
+  }
+  .sign--section--info .user--name,
+  .sign--section--info .user--email {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+  .sign--section--info .user--password {
+    padding: 1rem;
+    width: 80%;
+  }
+  .sign--section--info button {
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .sign--section--info {
+    padding: 0 0 0 2rem;
+  }
+  .sign--section--info .user--name,
+  .sign--section--info .user--email {
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+  .sign--section--info .user--password {
+    padding: 1rem;
+  }
 }

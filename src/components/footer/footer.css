@@ -25,6 +25,10 @@ footer {
   line-height: 2rem;
   color: #eeeff4;
 }
+.footer--flex .app__store {
+  transform: scale(0.9);
+  margin-left: -10px;
+}
 .footer--bottom {
   border-top: 1px solid #fff;
   padding: 2rem 0 1rem;
@@ -57,3 +61,31 @@ footer {
 .footer--bottom > ul > li > a:hover {
   color: red;
 }
+@media screen and (min-width: 300px) and (max-width: 576px) {
+  .footer--flex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer--flex .app__store {
+    transform: scale(0.75);
+    margin-left: -14px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .footer--flex .app__store {
+    transform: scale(0.8);
+    margin-left: -13px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 991px) {
+  .footer--flex .app__store {
+    transform: scale(0.85);
+    margin-left: -10px;
+  }
+}
+/* @media screen and (min-width: 992px) and (max-width: 1024px) {
+  .footer--flex .app__store {
+    transform: scale(0.9);
+    margin-left: -10px;
+  }
+} */

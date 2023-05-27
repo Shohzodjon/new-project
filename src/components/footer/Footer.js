@@ -67,7 +67,7 @@ const Footer = () => {
             </li>
             <li>
               <a href="https://www.apple.com/ru/app-store" target="_blank">
-                <img src={StoreApp} alt="tore--app" />
+                <img src={StoreApp} alt="tore--app" className="app__store" />
               </a>
             </li>
             <li>
@@ -75,7 +75,11 @@ const Footer = () => {
                 href="https://play.google.com/store/apps?hl=ru"
                 target="_blank"
               >
-                <img src={GooglePlay} alt="google--play" />
+                <img
+                  src={GooglePlay}
+                  alt="google--play"
+                  className="app__store"
+                />
               </a>
             </li>
           </ul>

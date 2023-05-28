@@ -3,9 +3,7 @@ import Profile from "../../profile/Profile";
 import Card from "./Card";
 import "./rightSide.css";
 import data from "./data.js";
-import StateManage from "./StateManage";
 const RightSide = () => {
-  console.log(data);
   return (
     <section className="right--section">
       <div className="right--side--nav">
@@ -32,7 +30,6 @@ const RightSide = () => {
           );
         })}
       </div>
-      <StateManage />
     </section>
   );
 };

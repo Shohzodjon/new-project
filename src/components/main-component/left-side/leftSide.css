@@ -3,6 +3,7 @@
   border-radius: 20px;
   padding: 2rem 0;
   width: 30%;
+  min-width: 30rem;
 }
 .left--side--logo {
   display: flex;
@@ -26,21 +27,29 @@
 .left--side--nav {
   margin: 2rem 1rem;
 }
-.left--side--nav li {
-  background: #efefef;
-  border-radius: 12px;
-  width: 100%;
-  padding: 1.5rem;
+.menu__wrapper {
+  padding-left: 1.5rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  display: none;
+}
+
+.nav__router__link {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: #efefef;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
   margin: 2rem 0;
+  width: 100%;
 }
-.left--side--nav > li > div {
+.left--side--nav > .nav__router__link > div {
   display: flex;
   align-items: center;
 }
-.left--side--nav .lft--side--icon {
+.left--side--nav .lft--side--icon,
+.lft--side--icon {
   font-size: 2rem;
   margin-right: 1rem;
   color: #707070;
@@ -52,9 +61,24 @@
   color: #707070;
 }
 .left--side--nav .product--count {
-  width: 30px;
-  height: 30px;
+  width: 27px;
+  height: 28px;
   border: 1px solid #999;
   text-align: center;
-  padding-bottom: 0.4rem;
+  padding-bottom: 1rem;
+  color: #06e775;
+}
+
+@media screen and (min-width: 300px) and (max-width: 576px) {
+  .left--side {
+    padding: 2rem 0;
+    width: 30%;
+    min-width: 30rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 222;
+    height: 68%;
+    display: none;
+  }
 }

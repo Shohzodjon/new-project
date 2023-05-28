@@ -4,6 +4,10 @@
   padding: 3rem 0.7rem 1rem;
   border-radius: 0 0 0.5rem 0.5rem;
 }
+.cart--head {
+  text-align: center;
+  flex-grow: 1;
+}
 .choose--items h5 {
   font-size: 1.5rem;
   margin: 0.5rem 0;
@@ -38,10 +42,12 @@
   border: none;
   background: crimson;
   color: #fff;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1.2rem;
   border-radius: 0.7rem;
   margin-right: 1.5rem;
   font-size: 1.7rem;
+  transition: all linear 0.4s;
+  cursor: pointer;
 }
 .clear--item {
   border: none;
@@ -54,6 +60,17 @@
 }
 .add {
   background-color: #0c7975;
+  font-size: 2rem;
+  text-align: center;
+  padding: 0.3rem 1rem;
+}
+.add:hover {
+  background: crimson;
+}
+.minus {
+  font-size: 2rem;
+  text-align: center;
+  padding: 0.3rem 1.2rem;
 }
 .cart--head {
   font-size: 2rem;

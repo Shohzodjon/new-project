@@ -6,7 +6,7 @@ import Home from "./components/home/Home";
 import Login from "./components/login/Login";
 import MainComponent from "./components/main-component/MainComponet";
 import SignUp from "./components/sign-up/SignUp";
-
+import StateManage from "./components/main-component/right-side/StateManage";
 import { PacmanLoader } from "react-spinners";
 function App() {
   const [loading, setLoading] = useState(false);
@@ -29,7 +29,9 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/sign" element={<SignUp />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/maincomponent" element={<MainComponent />} />
+            <Route path="/maincomponent" element={<MainComponent />}>
+              <Route path="store" element={<StateManage />} />
+            </Route>
           </Routes>
           <Footer />
         </BrowserRouter>

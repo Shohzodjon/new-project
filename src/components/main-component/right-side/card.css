@@ -51,10 +51,18 @@
   color: #00302e;
 }
 .cart--btn {
-  border: none;
+  border: 1px solid rgba(34, 34, 34, 0.5);
+  cursor: pointer;
+  padding: 5px 8px;
   background: none;
   font-weight: 500;
   font-size: 1.3rem;
-  line-height: 3rem;
   color: #06e775;
+  border-radius: 4px;
+  transition: all linear 0.4s;
+}
+.cart--btn:hover {
+  background: #06e775;
+  color: #fff;
+  border-color: transparent;
 }

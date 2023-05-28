@@ -25,26 +25,3 @@ const Card = (props) => {
   );
 };
 export default Card;
-
-{
-  /*  
-      <div className="col-11 col-md-6 col-lg-3 mx-0 mb-4">
-      <div className="card  p-0 h-100 ">
-        <img src={props.img} className="card-img-top img-fluid" alt="" />
-        <div className="card-body text-center">
-          <h5 className="card-title">{props.title}</h5>
-
-          <p className="card-text">{props.dec}</p>
-          <h5 className="card-title">{props.price}$</h5>
-          <button
-            className="btn btn-primary"
-            onClick={() => addItem(props.item)}
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
-    </div>
-
-*/
-}

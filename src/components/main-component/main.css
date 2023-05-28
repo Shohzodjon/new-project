@@ -6,3 +6,17 @@
   display: flex;
   justify-content: space-between;
 }
+/* .menu__btn {
+  position: fixed;
+  top: 15rem;
+  left: 0px;
+  padding: 5px;
+  width: 80px;
+  height: 45px;
+  background: rgb(52, 148, 151);
+  z-index: 111;
+  border: none;
+  border-radius: 4px;
+  transform: rotate(90deg);
+  font-size: 35px;
+} */

@@ -1,7 +1,8 @@
 import React from "react";
 import Logo from "../../../assets/imges/logo.svg";
-import { HiHome } from "react-icons/hi";
+import { HiHome, HiMenuAlt2 } from "react-icons/hi";
 import { BsFillBookmarkFill } from "react-icons/bs";
+
 import { MdShoppingBag } from "react-icons/md";
 import { useCart } from "react-use-cart";
 import "./leftSide.css";
@@ -17,34 +18,35 @@ const LeftSide = () => {
           <Link to="/">Lilies</Link>
         </h1>
       </div>
+
+      <div className="menu__wrapper">
+        <HiMenuAlt2 className="lft--side--icon" />
+      </div>
       <ul className="left--side--nav">
         <li>
-          <Link to="/">
-            <HiHome className="lft--side--icon" />
-            <span>Dashboard</span>
+          <Link to="/" className="nav__router__link">
+            <div>
+              <HiHome className="lft--side--icon" />
+              <span>Dashboard</span>
+            </div>
           </Link>
         </li>
-
         <li>
-          <div>
-            <MdShoppingBag className="lft--side--icon" />
-            <span>Orders</span>
-          </div>
+          <Link to="/maincomponent" className="nav__router__link">
+            <div>
+              <MdShoppingBag className="lft--side--icon" />
+              <span>Orders</span>
+            </div>
+          </Link>
         </li>
         <li>
-          <div>
-            <BsFillBookmarkFill className="lft--side--icon" />
-            <span>Your Cart</span>
-          </div>
-          {totalItems === 0 ? (
-            <span className="product--count" style={{ color: "crimson" }}>
-              {totalItems}
-            </span>
-          ) : (
-            <span className="product--count" style={{ color: "#06e775" }}>
-              {totalItems}
-            </span>
-          )}
+          <Link to="store" className="nav__router__link">
+            <div>
+              <BsFillBookmarkFill className="lft--side--icon" />
+              <span>Your Cart</span>
+            </div>
+            <span className="product--count">{totalItems}</span>
+          </Link>
         </li>
       </ul>
     </section>
